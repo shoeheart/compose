@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Codebarn\Test\HelloWorld;
 
-use Codebarn\HelloWorld\Example;
+use Codebarn\HelloWorld\HelloWorld;
 
-class ExampleTest extends TestCase
+class HelloWorldTest extends TestCase
 {
     public function testGreet(): void
     {
-        $example = $this->mockery(Example::class);
+        $example = $this->mockery(HelloWorld::class);
         $example->shouldReceive('greet')->passthru();
 
         $this->assertSame('Hello, Friends!', $example->greet('Friends'));

@@ -51,9 +51,9 @@ If you need to provide more detailed examples, use the `docs/` directory
 and provide a link here to the documentation.
 
 ``` php
-use Codebarn\HelloWorld\Example;
+use Codebarn\HelloWorld\HelloWorld
 
-$example = new Example();
+$example = new HelloWorld
 echo $example->greet('fellow human');
 ```
 -->
