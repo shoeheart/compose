@@ -35,4 +35,12 @@ class HelloWorld
     {
         return "Hello, {$name}!";
     }
+
+    /**
+     * Returns a dismissive statement using the provided name
+     */
+    public function dismiss(string $name = 'World'): string
+    {
+        return "{$name}, you are dismissed!";
+    }
 }
